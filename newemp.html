@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Employee Regostration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+        <h1>Employee Management System</h1>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href='allemp.php'>Employee List</a>
+            <a href='newemp.html'>Add Employee</a>
+            <a href='empsignup.php'>Employee LoginIn</a>
+        </div>
+      </div>
+
+</header>
+
+
+      <form action="newemp.php" method="POST">
+      
+        <h1 class="head">Add Employee Detail</h1>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+          
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+          
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+          
+        <label for="gender" required >Gender:</label>
+        <input type="radio" id="male" value="male" name="gender"><label for="male" class="light">Male</label><br>
+        <input type="radio" id="female" value="female" name="gender"><label for="female" class="light">Female</label>
+
+        <label for="mobnumber">Mobile Number:</label>
+        <input type="tel" id="mobnumber" name="mobnumber" pattern="[0-9]{10}" required>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin"  pattern="[0-9]{6}" required>
+
+        <label for="empcode">Employee Code:</label>
+        <input type="text" id="empcode" name="empcode" required>
+
+        <label for="empdept" >Employee Department:</label>
+        <select id="empdept" name="empdept" required>
+            <option value="" disabled selected>Select Employee Department</option>
+            <option value="account">Account</option>
+            <option value="legal">Legal</option>
+            <option value="purchase">Purchase</option>
+            <option value="sale">Sale</option>
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+            <option value="administration">Administration</option>
+        </select>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="cpassowrd">Confirm Passowrd:</label>
+        <input type="password" id="cpassword" name="cpassword" required>
+        
+        
+        <button type="submit" name="submit">Sign Up</button>
+      </form>
+      
+    
+</body>
+</html>
